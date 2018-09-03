@@ -17,7 +17,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "s
 
 db = SQLAlchemy(app)
 
-from models import *
+from .models import *
 
 
 # create route that renders index.html template
